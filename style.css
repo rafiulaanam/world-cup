@@ -187,6 +187,10 @@ header {
 .blog-img {
   height: 175px;
 }
+.blog-img img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
 .blog-info {
   margin-left: 20px;
   margin-top: 20px;

@@ -67,13 +67,13 @@ header {
   width: 197px;
   display: flex;
   height: 52px;
-  background-color: red;
+  background-color: #3d47ff;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
 }
+
 .poster-btn a {
-  background-color: red;
   color: white;
   text-decoration: none;
 
@@ -125,6 +125,10 @@ header {
   align-items: center;
   justify-content: center;
 }
+.topic:hover {
+  width: 254px;
+  height: 70px;
+}
 
 .topic a {
   color: black;
@@ -133,7 +137,7 @@ header {
   font-size: 20px;
 }
 .color-red {
-  background-color: red;
+  background-color: #3d47ff;
   color: white;
 }
 .color-red a {
@@ -159,26 +163,26 @@ header {
   box-shadow: 1px 1px 10px #0000005e;
   border-radius: 10px;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 275px;
+  flex-direction: column;
+  justify-content: center;
+  height: 275px;
 }
-.article-card{
-        width: 312px;
-        height: 362px;
-        box-shadow: 1px 1px 10px #0000005e;
-        border-radius: 10px;
+.article-card {
+  width: 312px;
+  height: 362px;
+  box-shadow: 1px 1px 10px #0000005e;
+  border-radius: 10px;
 }
 
-.flags-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.flags-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.flag-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.flag-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .blog-img {
   height: 175px;
@@ -234,9 +238,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-.footer-text {
-  position: absolute;
+  flex-direction: column;
 }
 
 .footer-text h1 {
@@ -254,7 +256,6 @@ hr {
   justify-content: space-between;
   width: 730px;
   column-gap: 40px;
- 
 }
 .items a {
   text-decoration: none;
@@ -267,19 +268,39 @@ hr {
   display: flex;
   justify-content: space-around;
 }
-.last-menu{
-    column-gap: 80px;
-    display: flex;
+.last-menu {
+  column-gap: 80px;
+  display: flex;
 }
 .view-btn {
- visibility: hidden;
+  visibility: hidden;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+}
+.icons-a {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: #22213c;
+}
+.icons-a a {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
 }
 /*-----------------------------
-         Footer Start
+         Footer End
 -----------------------------*/
 
 /*-----------------------------
      Responsive for Mobile
+           Pixel-5
 -----------------------------*/
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   header {
@@ -315,7 +336,7 @@ hr {
     margin-top: 30px;
     margin-left: 100px;
   }
-  main{
+  main {
     margin-top: 50px;
   }
   .topic-box {
@@ -358,32 +379,31 @@ hr {
     padding: 10px;
   }
   .down-area {
-    
     flex-direction: column;
-}
-.last-menu {
-   
+  }
+  .last-menu {
     flex-direction: column;
     align-items: center;
-}
+  }
 }
 
 /*-----------------------------
      Responsive for Tablet
+           iPad Mini
 -----------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  .poster-title h1{
+  .poster-title h1 {
     width: 290px;
   }
-  
+
   header {
     display: flex;
     justify-content: center;
     height: 500px;
   }
-.player-img{
+  .player-img {
     width: 100%;
-}
+  }
   .player-img img {
     width: 100%;
     margin-top: 77px;
@@ -400,7 +420,6 @@ hr {
     width: 100%;
     margin-left: 65px;
   }
-  
 
   .blogs {
     /* display: inline; */
@@ -428,7 +447,7 @@ hr {
     grid-template-columns: repeat(2, 1fr);
     /* width: 88%;
     column-gap: 0; */
-    
+
     margin-left: 0;
   }
   .c-center {
@@ -444,7 +463,6 @@ hr {
   }
   .menu {
     width: 100%;
-     
   }
   footer {
     height: 370px;
@@ -467,7 +485,7 @@ hr {
   .topic {
     box-shadow: 1px 1px 10px #0000005e;
   }
-  .down-area{
+  .down-area {
     flex-direction: column;
     align-items: center;
   }
